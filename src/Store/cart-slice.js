@@ -3,6 +3,10 @@ let cartSlice = createSlice({
   name: "cart",
   initialState: { items: [], totalAmount: 0 },
   reducers: {
+    add(state, action) {
+      state.items = action.payload.items;
+      state.totalAmount = action.payload.totalAmount;
+    },
     addItem(state, action) {
       let newItem = action.payload;
       state.totalAmount++;
