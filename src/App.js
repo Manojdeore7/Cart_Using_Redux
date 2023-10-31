@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     let getData = async () => {
       let response = await fetch(
-        "https://reduxstore-751e1-default-rtdb.firebaseio.com/store.json"
+        "https://reduxstore-ba545-default-rtdb.firebaseio.com/store.json"
       );
       if (!response.ok) {
         throw new Error("data is not get");
@@ -51,7 +51,7 @@ function App() {
         })
       );
       let response = await fetch(
-        "https://reduxstore-751e1-default-rtdb.firebaseio.com/store.json",
+        "https://reduxstore-ba545-default-rtdb.firebaseio.com/store.json",
         {
           method: "PUT",
           body: JSON.stringify(cart),
